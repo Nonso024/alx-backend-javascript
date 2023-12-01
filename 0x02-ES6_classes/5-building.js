@@ -10,7 +10,9 @@ export default class Building {
     }
   }
 
-  get() { return this.sqft; }
+  get sqft() {
+    return this._sqft;
+  }
 
   set sqft(feet) {
     this._sqft = feet;
